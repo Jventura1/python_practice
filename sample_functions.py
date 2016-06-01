@@ -9,3 +9,12 @@ def max_of_three(arg1,arg2,arg3):
             return arg2
     else:
         return arg3
+
+#our second function!!
+def list_ends(L):
+    '''This function takes in a list and returns a new list with the first and last entries'''
+    final_list = []
+    list_size = len(L)
+    final_list.append(L[0])
+    final_list.append(L[list_size-1]) 
+    return final_list
