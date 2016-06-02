@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+
 from scipy.optimize import curve_fit
 
 def func(x, a, b, c):
@@ -24,3 +25,4 @@ plt.plot(xdata,ydata,marker='*')
 plt.plot(xdata,y)
 #best fit y data to the perturbed data
 plt.plot(xdata,func(xdata,popt[0],popt[1],popt[2]), marker = '*')
+plt.show()
